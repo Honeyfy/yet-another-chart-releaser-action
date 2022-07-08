@@ -206,9 +206,10 @@ install_chart_releaser() {
         tar -xzf yacr.tar.gz -C "$cache_dir"
         rm -f yacr.tar.gz
 
-        echo 'Adding yacr directory to PATH...'
-        export PATH="$cache_dir:$PATH"
     fi
+    
+    echo 'Adding yacr directory to PATH...'
+    export PATH="$cache_dir:$PATH"
 }
 
 lookup_latest_tag() {
